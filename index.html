@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Payment Simulator</title>
+
+    <link rel="stylesheet" href="CreditCard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <script src="CreditCard.js"></script>
+        
+</head>
+<body onload="renderItemsOnLoad()">
+    <div class="main-container">
+
+        <div class="main-title">
+            <h1>Pay by Credit Card</h1>
+        </div>
+
+        <div class="body-container">
+            <div class="content-header">
+                <div class="header-title">
+                    <div class="item" ><h3>Items</h3></div>
+                    <div class="price" ><h3>Price</h3></div>
+                </div>
+                <div class="items" id="resturentItems">
+                   
+                   
+                    
+                    
+                    
+                </div>
+            </div>
+            <div class="visa-container">
+                <div class="order-info-container">
+                    <div class="your-order-items">
+                        <input type="text=" placeholder="Your Order Items" id="your-order">
+                    </div>
+                    <div class="your-order-price">
+                        <input type="text=" placeholder="Total Price" id="total-price">
+                    </div>
+                </div>
+                <div class="visa-front-back">
+                    <div class="visa-front">
+                        <div class="card-number-container">
+                            <input type="number" class="visa-number" id="cardNumber" placeholder="Card Number"> 
+                        </div>
+                        <div class="card-holder-name">
+                            <input type="text" class="visa-name" id="cardHolderName" placeholder="Card Holder Name"> 
+                        </div>
+                        <div class="visa-logo">
+                            <img src="stuff/visa-logo.png" alt="visa">
+                        </div>
+                    </div>
+                    <div class="visa-back-container">
+                        <div class="empty-div-gray"></div>
+                        <div class="cvv-card">
+                            <input type="number" class="cvv-number" id="cvvNumber" placeholder="CVV">
+                        </div>
+                    </div>
+                    <div class="sendButton" id="sendButton" onclick="onclickPay()">Pay</div>
+                </div>
+                <div class="order-info-container">
+                    <div class="paymeent-result">
+                        <input type="text=" placeholder="Payment Result will appear here" id="paymeent-result">
+                    </div>
+                </div>
+            </div>
+            <div class="content-header">
+
+                <div class="header-title">
+                    <div class="item"><h3>Items</h3></div>
+                    <div class="item"><h3>Count</h3></div>
+                    <div class="item"><h3>Price</h3></div>
+                </div>
+                <div id="cart-items">
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
